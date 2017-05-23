@@ -1,0 +1,40 @@
+{
+    "manifest_version": 2,
+
+    "name": "DLYou",
+    "description": "This extension used to look up words.",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon":
+        {
+            "128": "img/128.png"
+        },
+        "default_title": "Click here to Crack Download Link"
+    },
+
+    "icons": {
+        "128": "img/128.png",
+        "48": "img/48.png",
+        "32": "img/32.png",
+        "16": "img/16.png"
+    },
+
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*",
+        "notifications",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+
+    "background": {
+        "scripts": [ "js/main.js" ]
+    },
+
+    "content_scripts": [{
+        "js": [ "js/main.js" ],
+        "matches": [ "https://www.youtube.com/*" ]
+    }]
+}
