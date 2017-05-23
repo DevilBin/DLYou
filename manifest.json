@@ -2,7 +2,7 @@
     "manifest_version": 2,
 
     "name": "DLYou",
-    "description": "This extension used to look up words.",
+    "description": "This extension used to download youtube video.",
     "version": "1.0",
 
     "browser_action": {
